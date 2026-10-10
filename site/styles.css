@@ -88,10 +88,14 @@ section:not(.hero) { padding-block: 70px; }
 .section-heading { margin-bottom: 34px; }
 h2 { font-size: clamp(32px, 3.5vw, 44px); font-weight: 600; letter-spacing: -.045em; line-height: 1.15; }
 .section-heading > p { margin-top: 12px; color: var(--muted); font-size: 17px; letter-spacing: -.015em; }
-.featured-projects { display: grid; grid-template-columns: 1.2fr 1fr; gap: 24px; align-items: start; }
+.featured-projects { display: grid; grid-template-columns: 1.2fr 1fr; gap: 24px; align-items: stretch; }
 .project-feature { border-radius: 28px; background: var(--surface); overflow: hidden; }
-.project-image { aspect-ratio: 1.9; width: 100%; height: auto; object-fit: cover; object-position: 58% 52%; }
 .project-content { padding: 32px 34px 28px; }
+.project-agent .project-content { height: 100%; display: flex; flex-direction: column; }
+.project-agent .project-content > .text-link { margin-top: auto; align-self: flex-start; }
+.agent-topics { margin: 34px 0 31px; display: grid; grid-template-columns: 1fr 1fr; gap: 28px 24px; }
+.agent-topics dt { font-size: 14px; font-weight: 550; letter-spacing: -.015em; }
+.agent-topics dd { margin: 6px 0 0; font-size: 12px; color: var(--muted); line-height: 1.55; }
 .tags { display: flex; gap: 10px; flex-wrap: wrap; color: var(--muted); font-size: 11px; margin-bottom: 19px; }
 .tags span { border: 1px solid var(--line); border-radius: 999px; padding: 3px 10px; }
 .project-content h3 { font-size: 29px; line-height: 1.16; letter-spacing: -.04em; font-weight: 600; }
@@ -202,7 +206,6 @@ details > p { font-size: 13px; color: var(--muted); padding-top: 13px; line-heig
   h2 { font-size: 32px; }.section-heading { margin-bottom: 26px; }.section-heading > p { font-size: 15px; max-width: 420px; }
   .featured-projects { grid-template-columns: 1fr; gap: 20px; }
   .project-content { padding: 27px; }.project-content h3 { font-size: 28px; }
-  .project-image { aspect-ratio: 1.7; }
   .model-diagram { margin-block: 28px; }
   .project-index { margin-top: 24px; }.project-index > a { grid-template-columns: 1fr; gap: 12px; padding-block: 24px; }.index-meta { justify-content: space-between; }
   .publication { grid-template-columns: 1fr; gap: 11px; padding-block: 25px; }.publication-year { padding: 0; font-size: 12px; }.publication-body h3 { font-size: 20px; }.publication-venue { margin-bottom: 8px; }.paper-link { justify-content: start; margin-top: 4px; }

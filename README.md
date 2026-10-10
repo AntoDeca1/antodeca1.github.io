@@ -21,4 +21,4 @@ Open `http://localhost:8766`.
 
 Push to `main` to publish with GitHub Pages. The workflow also runs daily at 06:23 UTC to refresh contributions before deployment. It uses GitHub's public calendar without authentication or third-party statistics services. It publishes aggregate day counts only. If GitHub changes its markup or the refresh fails, the last valid snapshot remains available and the workflow reports a warning. The site shows the snapshot date and indicates when it is stale. Scheduled workflows in public repositories may be disabled by GitHub after 60 days without repository activity; re-enable the workflow from the Actions tab if needed.
 
-The generated conceptual similarity illustration is decorative, not an experiment result. The portrait is Antonio's public GitHub profile image. Professional information is based on his GitHub repositories, coauthored papers, and LinkedIn profile.
+The portrait is Antonio's public GitHub profile image. Professional information is based on his GitHub repositories, coauthored papers, and LinkedIn profile.
